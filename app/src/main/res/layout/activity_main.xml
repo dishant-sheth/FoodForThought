@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dishant.navigationdrawer.MainActivity">
+
+
+        <include layout="@layout/app_bar"
+            android:id="@+id/toolbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentContainer">
+
+    </FrameLayout>
+
+</LinearLayout>
+
+    <fragment
+        android:id="@+id/drawerFragment"
+        android:layout_width="@dimen/nav_draw_width"
+        android:layout_height="match_parent"
+        app:layout="@layout/fragment_drawer"
+        android:layout_gravity="start"
+        android:name="com.example.dishant.navigationdrawer.DrawerFragment"
+        tools:layout="@layout/fragment_drawer"/>
+</android.support.v4.widget.DrawerLayout>
+
+
+

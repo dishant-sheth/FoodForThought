@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="250dp"
+    android:layout_width="185dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardElevation="9dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardBackgroundColor="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/rec_image"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:text="Name"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:id="@+id/rec_name"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="4dp"
+                android:id="@+id/time"
+                android:src="@drawable/clockicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignBottom="@+id/time"
+                android:layout_alignTop="@+id/time"
+                android:layout_toRightOf="@+id/time"
+                android:textSize="20sp"
+                android:text="Time"
+                android:id="@+id/rec_time"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/calorie"
+                android:src="@drawable/caloriesicon"
+                android:layout_below="@+id/time"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignBottom="@+id/calorie"
+                android:layout_alignTop="@+id/calorie"
+                android:layout_toRightOf="@+id/calorie"
+                android:textSize="20sp"
+                android:text="calories"
+                android:id="@+id/rec_calorie"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

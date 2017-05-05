@@ -1,0 +1,129 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dishant.navigationdrawer.Home"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:id="@+id/indiaImage"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:id="@+id/indiaLayout">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/india">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:scaleType="fitXY"
+        android:id="@+id/italyImage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:id="@+id/italyLayout">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/italy"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:scaleType="fitXY"
+        android:id="@+id/chinaImage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:id="@+id/chinaLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/china"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:scaleType="fitXY"
+        android:id="@+id/mexicoImage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:id="@+id/mexicoLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mexico"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:scaleType="fitXY"
+        android:id="@+id/americaImage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:id="@+id/americaLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/america"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

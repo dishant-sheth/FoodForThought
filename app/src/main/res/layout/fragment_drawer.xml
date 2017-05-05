@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.dishant.navigationdrawer.DrawerFragment">
+
+    <LinearLayout
+        android:id="@+id/imgCont"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#ace"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            app:border_color="#fff"
+            app:border_width="3dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profile_pic"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:text="Profile Name"
+            android:layout_marginLeft="10dp"
+            android:textSize="21sp"
+            android:id="@+id/profile_name"/>
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recView"
+        android:layout_marginTop="15dp"
+        android:layout_above="@id/imgCont">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>
